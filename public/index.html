@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Downloader</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="top-navbar">
+    <img src="logo-black.png" alt="Your Custom Logo" class="navbar-logo">
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <img src="youtube_logo.png" alt="YouTube Logo" class="youtube-logo">
+      <h1 class="header-title">Downloader</h1>
+    </div>
+    <div class="form-container">
+      <form id="downloadForm">
+        <div class="form-group">
+          <label for="videoUrl">Video URL:</label>
+          <input type="text" id="videoUrl" name="videoUrl" required>
+        </div>
+        <div class="form-group">
+          <label for="type">Download Type:</label>
+          <select id="type" name="type" required>
+            <option value="video">Video</option>
+            <option value="audio">Audio</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="submit"><span>Download</span></button>
+        </div>
+      </form>
+    </div>
+    <div id="downloadMessage" class="message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
